@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./tailwind/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/style/override.css">
     <title>Marine Exotics</title>
   </head>
   <body>
@@ -145,103 +146,50 @@
     <!-- END OF NAV -->
 
     <header>
-      <div class="bg-white">
-        <div class="overflow-hidden pt-32 sm:pt-14">
-          <div class="bg-gray-800">
-            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-              <div class="relative pt-48 pb-16 sm:pb-24">
-                <div>
-                  <h2
-                    id="sale-heading"
-                    class="text-xl font-bold tracking-tight text-white md:text-5xl"
-                  >
-                    Check our Dropbox
-                    <br />
-                    for complete product list
-                  </h2>
-                  <div class="mt-6 text-base">
-                    <a href="#" class="font-semibold text-white">
-                      Dropbox
-                      <span aria-hidden="true"> &rarr;</span>
-                    </a>
-                  </div>
+      <div class="relative overflow-hidden bg-white">
+        <!-- Decorative background image and gradient -->
+        <div aria-hidden="true" class="absolute inset-0">
+          <div class="absolute inset-0 mx-auto max-w-7xl overflow-hidden xl:px-8">
+            <img src="./assets/images/h-1.jpg" alt="" class="h-full w-full object-cover object-center">
+          </div>
+          <div class="absolute inset-0 bg-white bg-opacity-75"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-white via-white"></div>
+        </div>
+      
+        <!-- Callout -->
+        <section aria-labelledby="sale-heading" class="relative mx-auto flex max-w-7xl flex-col items-center px-4 pt-32 text-center sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-2xl lg:max-w-none">
+            <h2 id="sale-heading" class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">WholeSale Corals</h2>
+            <p class="mx-auto mt-4 max-w-xl text-xl text-gray-600">To see our most updated product list. Click on the link to our drop box below</p>
+            <a href="#" class="mt-6 inline-block w-full rounded-md border border-transparent bg-gray-900 py-3 px-8 font-medium text-white hover:bg-gray-800 sm:w-auto">Get access to DropBox</a>
+          </div>
+        </section>
+      
+        <!-- Testimonials -->
+        <section aria-labelledby="testimonial-heading" class="relative mx-auto max-w-7xl py-24 px-4 sm:px-6 lg:py-32 lg:px-8">
+          <div class="mx-auto max-w-2xl lg:max-w-none">
+            <h2 id="testimonial-heading" class="text-2xl font-bold tracking-tight text-gray-900">Welcome to Marine Exotics:</h2>
+      
+            <div class="mt-16 space-y-16 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:space-y-0">
+              <blockquote class="sm:flex lg:block">
+               
+                <div class="mt-8 sm:mt-0 sm:ml-6 lg:mt-10 lg:ml-0">
+                  <p class="text-lg text-gray-600">We are <strong>Wholesale Coral</strong> company. However, if you are a retail customer and see something you would like. Contact your local fish stores and reef supplier about us!  </p>
                 </div>
-
-                <div
-                  class="absolute -top-32 left-1/2 -translate-x-1/2 transform sm:top-6 sm:translate-x-0"
-                >
-                  <div
-                    class="ml-24 flex min-w-max space-x-6 sm:ml-3 lg:space-x-8"
-                  >
-                    <div
-                      class="flex space-x-6 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8"
-                    >
-                      <div class="flex-shrink-0">
-                        <img
-                          class="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
-                          src="./assets/images/test1.jpg"
-                          alt=""
-                        />
-                      </div>
-
-                      <div class="mt-6 flex-shrink-0 sm:mt-0">
-                        <img
-                          class="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
-                          src="./assets/images/test2.jpg"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                    <div
-                      class="flex space-x-6 sm:-mt-20 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8"
-                    >
-                      <!-- Center Piece Picture -->
-                      <div class="flex-shrink-0">
-                        <img
-                          class="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
-                          src="./assets/images/test9.jpg"
-                          alt=""
-                        />
-                      </div>
-
-                      <div class="mt-6 flex-shrink-0 sm:mt-0">
-                        <img
-                          class="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
-                          src="./assets/images/test10.jpg"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                    <div
-                      class="flex space-x-6 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8"
-                    >
-                      <div class="flex-shrink-0">
-                        <img
-                          class="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
-                          src="./assets/images/test6.jpg"
-                          alt=""
-                        />
-                      </div>
-
-                      <div class="mt-6 flex-shrink-0 sm:mt-0">
-                        <img
-                          class="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
-                          src="./assets/images/test3.jpg"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              </blockquote>
+      
+          
+      
+              
             </div>
           </div>
-        </div>
+        </section>
       </div>
+      
     </header>
 
     <!--   Product List Begins  -->
-    <div class="bg-white">
+    <div class="bg-white" id="product-list">
       <div
         class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8"
       >
@@ -257,7 +205,8 @@
                 <img
                   src="./assets/images/p-scoly-1.jpg"
                   alt="Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls."
-                  class="h-full w-full object-cover object-center"
+                  class="object-center"
+                  width="450" height="450"
                 />
               </div>
               <div class="relative mt-4">
@@ -279,14 +228,15 @@
            
           </div>
 
-          <!-- Product # -->
+          <!-- Product #2 -->
           <div>
             <div class="relative">
               <div class="relative h-72 w-full overflow-hidden rounded-lg">
                 <img
                   src="./assets/images/p-scoly-2.jpg"
                   alt="Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls."
-                  class="h-full w-full object-cover object-center"
+                  class="img object-cover object-center"
+                  width="450" height="450"
                 />
               </div>
               <div class="relative mt-4">
@@ -308,14 +258,15 @@
            
           </div>
 
-          <!-- Product # -->
+          <!-- Product #3 -->
           <div>
             <div class="relative">
               <div class="relative h-72 w-full overflow-hidden rounded-lg">
                 <img
                   src="./assets/images/p-torch-1.jpg"
                   alt="Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls."
-                  class="h-full w-full object-cover object-center"
+                  class="object-cover object-center"
+                  width="450" height="450"
                 />
               </div>
               <div class="relative mt-4">
@@ -336,14 +287,15 @@
             </div>
            
           </div>
-          <!-- Product # -->
+          <!-- Product #4 -->
           <div>
             <div class="relative">
               <div class="relative h-72 w-full overflow-hidden rounded-lg">
                 <img
                   src="./assets/images/p-torch-2.jpg"
                   alt="Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls."
-                  class="h-full w-full object-cover object-center"
+                  class="object-cover object-center"
+                  width="450" height="450"
                 />
               </div>
               <div class="relative mt-4">
@@ -364,14 +316,15 @@
             </div>
            
           </div>
-          <!-- Product # -->
+          <!-- Product #5 -->
           <div>
             <div class="relative">
               <div class="relative h-72 w-full overflow-hidden rounded-lg">
                 <img
                   src="./assets/images/p-acro-1.jpg"
                   alt="Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls."
-                  class="h-full w-full object-cover object-center"
+                  class="object-cover object-center"
+                  width="450" height="450"
                 />
               </div>
               <div class="relative mt-4">
@@ -392,14 +345,15 @@
             </div>
            
           </div>
-          <!-- Product # -->
+          <!-- Product #6 -->
           <div>
             <div class="relative">
               <div class="relative h-72 w-full overflow-hidden rounded-lg">
                 <img
                   src="./assets/images/p-acro-2.jpg"
                   alt="Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls."
-                  class="h-full w-full object-cover object-center"
+                  class="object-cover object-center"
+                  width="450" height="450"
                 />
               </div>
               <div class="relative mt-4">
@@ -420,14 +374,15 @@
             </div>
            
           </div>
-          <!-- Product # -->
+          <!-- Product #7 -->
           <div>
             <div class="relative">
               <div class="relative h-72 w-full overflow-hidden rounded-lg">
                 <img
                   src="./assets/images/p-coral-1.jpg"
                   alt="Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls."
-                  class="h-full w-full object-cover object-center"
+                  class="object-cover object-center"
+                  width="450" height="450"
                 />
               </div>
               <div class="relative mt-4">
@@ -448,14 +403,15 @@
             </div>
            
           </div>
-          <!-- Product # -->
+          <!-- Product #8 -->
           <div>
             <div class="relative">
               <div class="relative h-72 w-full overflow-hidden rounded-lg">
-                <img
+                <img 
                   src="./assets/images/p-coral-2.jpg"
                   alt="Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls."
-                  class="h-full w-full object-cover object-center"
+                  class="object-cover object-center"
+                  width="450" height="450"
                 />
               </div>
               <div class="relative mt-4">
@@ -476,63 +432,7 @@
             </div>
            
           </div>
-          <!-- Product # -->
-          <div>
-            <div class="relative">
-              <div class="relative h-72 w-full overflow-hidden rounded-lg">
-                <img
-                  src="./assets/images/test5.jpg"
-                  alt="Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls."
-                  class="h-full w-full object-cover object-center"
-                />
-              </div>
-              <div class="relative mt-4">
-                <h3 class="text-sm font-medium text-gray-900">
-                  Description Title
-                </h3>
-                <p class="mt-1 text-sm text-gray-500">White and black</p>
-              </div>
-              <div
-                class="absolute inset-x-0 top-0 flex h-72 items-end justify-end overflow-hidden rounded-lg p-4"
-              >
-                <div
-                  aria-hidden="true"
-                  class="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-black opacity-50"
-                ></div>
-               
-              </div>
-            </div>
-           
-          </div>
-
-          <!-- Product # -->
-          <div>
-            <div class="relative">
-              <div class="relative h-72 w-full overflow-hidden rounded-lg">
-                <img
-                  src="./assets/images/test5.jpg"
-                  alt="Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls."
-                  class="h-full w-full object-cover object-center"
-                />
-              </div>
-              <div class="relative mt-4">
-                <h3 class="text-sm font-medium text-gray-900">
-                  Description Title
-                </h3>
-                <p class="mt-1 text-sm text-gray-500">White and black</p>
-              </div>
-              <div
-                class="absolute inset-x-0 top-0 flex h-72 items-end justify-end overflow-hidden rounded-lg p-4"
-              >
-                <div
-                  aria-hidden="true"
-                  class="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-black opacity-50"
-                ></div>
-               
-              </div>
-            </div>
-           
-          </div>
+     
 
           <!-- END OF PRODUCTS -->
         </div>
